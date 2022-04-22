@@ -1,40 +1,38 @@
 #include <iostream>
-#include <stdlib.h>
 
 using namespace std;
 
 class Fruta{
     private:
-        char nombre;
-        char color;
-        char rojo;
-        char manzana;
-
+        string nombre;
+        string color;
+        
     public:
-        void setnombre(char n){
-            this.nombre = n;
+        void setNombre(string pNombre){
+            this->nombre = pNombre;  
         }
-
-        void setcolor(char c){
-            this.color = c;
+        
+        void setColor(string pColor){
+            this->color = pColor;  
         }
-
-        char getnombre(){
-            return nombre;
+        
+        string getNombre(){
+            return this->nombre;
         }
-
-         char getcolor(){
-            return color;
+        
+        string getColor(){
+            return this->color;
         }
-
-
 };
 
-int main(){
-    Fruta = new Fruta().getnombre('manzana');
-    Fruta = new Fruta().getcolor('rojo')
+int main()
+{
+    Fruta frutita;
+    frutita.setNombre("Manzana");
+    frutita.setColor("Rojo");
+    
+    cout<<frutita.getNombre()<<endl;
+    cout<<frutita.getColor()<<endl;
 
-    count<<"el nombre es: "<<nombre<<endl;
-    count<<"el color es: "< <nombre<<endl;
-
+    return 0;
 }
