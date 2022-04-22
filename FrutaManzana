@@ -1,0 +1,40 @@
+#include <iostream>
+#include <stdlib.h>
+
+using namespace std;
+
+class Fruta{
+    private:
+        char nombre;
+        char color;
+        char rojo;
+        char manzana;
+
+    public:
+        void setnombre(char n){
+            this.nombre = n;
+        }
+
+        void setcolor(char c){
+            this.color = c;
+        }
+
+        char getnombre(){
+            return nombre;
+        }
+
+         char getcolor(){
+            return color;
+        }
+
+
+};
+
+int main(){
+    Fruta = new Fruta().getnombre('manzana');
+    Fruta = new Fruta().getcolor('rojo')
+
+    count<<"el nombre es: "<<nombre<<endl;
+    count<<"el color es: "< <nombre<<endl;
+
+}
